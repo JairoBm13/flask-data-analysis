@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <h1>Hi, {{ user.username }}!</h1>
+        {% for pro in projects %}
+        <div><p>{{ pro.name }} of {{pro.author.username}} will: <b>{{ pro.description }}</b></p></div>
+        {% endfor %}
+    </body>
+
+{% endblock %}
